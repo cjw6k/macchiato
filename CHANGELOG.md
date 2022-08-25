@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- nunomaduro/termwind dependency
+- psy/psysh dependency (dev)
+- core functionality
+
+### Changed
+- psalm errorLevel 2 -> 1
 
 [0.1.0] 2022-08-24
 ### Added
@@ -14,5 +21,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Initialized the project with composer
 - Setup a branch-alias
 - phpcs config (a6a-relaxed)
-- psalm config (errorLevel=1)
-- added latte/latte dependency
+- psalm config (errorLevel=2)
+- latte/latte dependency
