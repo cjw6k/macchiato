@@ -1,0 +1,47 @@
+{
+    "name": "cjw6k/macchiato",
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "Macchiato\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cjw6k",
+            "email": "chris@lot2k.com"
+        }
+    ],
+    "require": {
+        "latte/latte": "^3.0"
+    },
+    "require-dev": {
+        "a6a/coding-standards": "~0.1",
+        "lot2k/php-buildskip": "1.0.x-dev",
+        "vimeo/psalm": "^4.26"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/package-versions-deprecated": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "phpcs": [
+            "vendor/bin/phpcs --standard=phpcs.xml src"
+        ],
+        "psalm": [
+            "vendor/bin/psalm -c psalm.xml"
+        ],
+        "qa" : [
+            "@phpcs",
+            "@psalm"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    }
+}
